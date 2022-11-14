@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookStore</title>
+
+    <link rel="shortcut icon" href="images/favicons.jpeg" type="image/jpeg">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function un_available(){
+            document.querySelector(".unavailable-container").style.display = 'block';
+        }
+        
+        function cancel(){
+            document.querySelector(".x").addEventListener("click", function(){
+                document.querySelector(".unavailable-container").style.display = 'none';
+            });
+        }
+        
+    </script>
+</head>
+<body>
+    <div class="top-of-the-page">
+        <p style="font-size: 70px; color: #fefae0; margin-bottom:30px;">Today a reader, Tomorrow a leader</p>
+        <p style="font-size: 30px; margin-left:50px; color:#dce0e8;">Margaret Fuller</p>
+    </div>
+    <div class="menus">
+        <div class="menu-buttons">
+            <button onclick="un_available()">Setting</button>
+            <button onclick="un_available()">Favorite</button>
+            <button onclick="un_available()">About</button>
+        </div>
+        <div class="search">
+            <input type="text">
+            <button><img src="images/search-button.png"></button>   
+        </div>
+        
+    </div>
+
+    <main class="content">
+            <div class="the-book">
+                <img src="images/A smarter way to learn javascript.jpg">
+                <div class="description">
+                    <h3 >Python book</h3>
+                    <p >Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                    <button class="btn" onclick="un_available()">12$ buy</button>
+                </div>
+            </div>
+
+            <div class="the-book">
+                <img src="images/deep learning with python.jpg">
+                <div class="description">
+                    <h3 >Python book</h3>
+                    <p >Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                    <button class="btn" onclick="un_available()">12$ buy</button>
+                </div>
+            </div>
+
+            <div class="the-book">
+                <img src="images/dive into python3.jpg">
+                <div class="description">
+                    <h3 >Python book</h3>
+                    <p >Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                    <button class="btn" onclick="un_available()">12$ buy</button>
+                </div>
+            </div>
+
+            <div class="the-book">
+                <img src="images/eloquent javascript.jpg">
+                <div class="description">
+                    <h3 >Python book</h3>
+                    <p >Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                    <button class="btn" onclick="un_available()">12$ buy</button>
+                </div>
+            </div>
+
+            <div class="the-book">
+                <img src="images/violet python.jpg">
+                <div class="description">
+                    <h3 >Python book</h3>
+                    <p >Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                    <button class="btn" onclick="un_available()">12$ buy</button>
+                </div>
+            </div>
+
+            <div class="the-book">
+                <img src="images/html.jpg">
+                <div class="description">
+                    <h3 >Python book</h3>
+                    <p >Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                    <button class="btn" onclick="un_available()">12$ buy</button>
+                </div>
+            </div>
+    </main>
+    <div class="unavailable-container">
+        <div class="unavailable">
+            <button class="x" onclick="cancel()">X</button>
+            <h3>Sorry, currently this service is not available</h3>
+            
+        </div>
+    </div>
+    
+    <footer>
+        <div class="company">
+            <ul onclick="un_available()" >
+                <li style="margin-bottom:1.5rem; font-weight:550; font-style: italic; ">Company</li>
+                <li>About Us</li>
+                <li>Our services</li>
+                <li>Privacy Policy</li>
+            </ul>
+        </div>
+        <div class="gethelp">
+            <ul onclick="un_available()">
+                <li style="margin-bottom:1.5rem; font-weight:550; font-style: italic; ">Get Help</li>
+                <li>FAQ</li>
+                <li>Returns</li>
+                <li>make suggestion</li>
+                <li>Payment Option</li>
+            </ul>
+        </div>
+        <div class="followus">
+            <p style="margin-bottom:1rem; font-weight:550; font-style: italic; ">follow us</p>
+            <button onclick="un_available()"><img src="images/instragram.png"></button>
+            <button onclick="un_available()"><img src="images/telegram.png"></button>
+            <button onclick="un_available()"><img src="images/twitter.png"></button>
+        </div>
+    </footer>
+
+    
+
+</body>
+</html>

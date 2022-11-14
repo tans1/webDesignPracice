@@ -1,0 +1,245 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.top-of-the-page {
+    background: url("images/library.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 95vh;
+    overflow-x: hidden;
+}
+
+.top-of-the-page p{
+    position: relative;
+    top: 25rem;
+    left: 6.25;
+    padding: 0px;
+    margin-left: 3rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    letter-spacing: 2px;
+    text-shadow: black 10px 3px;
+}
+.menus {
+    margin-top: -5px;
+    padding-left: 2rem;
+    padding-right: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    background-color: #16425b;
+}
+.menu-buttons  button{
+    color: white;
+    border: none;
+    background-color: transparent;
+    margin-right: 1rem;
+    width: 4rem;
+    height: 3rem;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+.menu-buttons  button:hover {
+    transform: translateY(-1rem);
+    transition: transform 500ms;
+}
+.search {
+    width: 30rem;
+    display:flex;
+    height: 2.3rem;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.search button{
+    width: 2rem;
+    padding: 2px;
+    overflow-y: hidden;
+    position: relative;
+    right: 5px;
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+}
+.search img{
+    width: 1.1rem;
+    padding-top: 3px;
+    padding-left: 2px;
+}
+.search input {
+    font-size: 1.2rem;
+    flex: 1;
+    height: 2.3rem;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    padding-right: 20px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: rgb(236, 236, 236);
+}
+
+.content {
+    margin: 3rem 5rem;
+    display: grid;
+    grid-template-columns: 23vw 23vw 23vw;
+    column-gap: 7rem;
+    row-gap: 5rem;
+    
+}
+
+img{
+	height: 100%;
+    width: 100%;
+}
+.the-book{
+    box-shadow: 2px 2px 3px rgba(0,0,0,0.5);
+    max-width: 100%;
+	position: relative;
+	overflow: hidden;
+	transition: all 0.3s ease-out;
+	background:radial-gradient(#111 50%, #000 100%);
+}
+
+.the-book img{
+	transition: all 0.3s ease-out;
+}
+.the-book:hover img{
+	transform: scale(1.1) translateY(-20px); 
+	opacity: 0.3
+}
+.the-book .description{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 15px 10px;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+    font-size: 2rem;
+}
+.the-book .description h3{
+	font-weight: 700;
+	margin: 0 0 20px;
+	transform: translateY(30px);
+	opacity: 0;
+	transition: all 0.3s ease-out;
+
+}
+.the-book .description p{
+	transform: translateY(30px);
+	opacity: 0;
+	transition: all 0.3s ease-out 0.2s;
+}
+.the-book .description .btn{
+	color: #fff;
+	background:#34aff3;
+	padding: 10px 25px;
+	border-radius: 5px;
+    border: none;
+	transform: translateY(2rem);
+	opacity: 0;
+	transition: all 0.3s ease-out 0.4s;
+    cursor: pointer;
+}
+.the-book .description .btn:hover{
+	background:#0a83c5;
+}
+.the-book:hover .description h3{
+	opacity: 1;
+	transform: translateY(0px);
+}
+.the-book:hover .description p{
+	opacity: 1;
+	transform: translateY(0px);
+}
+.the-book:hover .description .btn{
+	opacity: 1;
+	transform: translateY(0px);
+}
+
+.unavailable-container {
+    display :none;
+    position: fixed;
+    top:0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.395);
+}
+
+
+.unavailable {
+    
+    border: none;
+    border-radius: 10px;
+    background-color: #eef1ef;
+    width: 25vw;
+    height:30vh;
+    border: 2px black solid;
+    position: fixed;
+    left: 30vw;
+    top:30vh;
+}
+.unavailable button{
+    font-size: 1.5rem;
+    width: 2rem;
+    height: 2rem;
+    font-weight: 600;
+    border-radius: 7px;
+    border: solid black 2px;
+    float:right;
+    margin:0.5rem 0.5rem;
+    cursor: pointer;
+    color: rgb(179, 74, 74);
+}
+.unavailable h3 {
+    width: 100%;
+    margin-top: 3rem;
+    padding-left: 0.5rem;
+}
+footer{
+    width: 100%;
+    height: 30vh;
+    background-color: #202020;
+    color: white;
+    margin-top: 10vh;
+    padding:2rem 5rem;
+    display: grid;
+    grid-template-columns:10vw 10vw 20vw;
+    overflow: hidden;
+    
+}
+
+ul {
+    list-style: none;
+}
+.company, .gethelp ,.followus {
+    vertical-align: top;
+
+}
+
+footer li {
+    margin-top: 0.8rem;
+    cursor: pointer;
+}
+
+.followus {
+    position: relative;
+    top: 10vh;
+    left: 5vw;
+}
+.followus button {
+    width: 2rem;
+    padding-top: 3px;
+    margin-left: 0.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
